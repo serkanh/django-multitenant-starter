@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:9.6
+    volumes:
+      - ${PWD}/postgresql_data:/var/lib/postgresql/data
+    environment: 
+      POSTGRES_USER: shaytac
+      POSTGRES_PASSWORD: shaytac
+      POSTGRES_PASSWORD: online_orders
+    ports:
+      - 5432:5432
+
+
+
